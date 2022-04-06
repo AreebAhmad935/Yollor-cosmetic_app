@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:yollor/screen/home/home.dart';
 import 'package:yollor/screen/on_boarding/onboarding_content.dart';
+import 'package:yollor/screen/signin/signin_screen.dart';
 
 class Onboarding_Screen extends StatefulWidget {
   const Onboarding_Screen({Key? key}) : super(key: key);
@@ -83,7 +83,7 @@ class _Onboarding_ScreenState extends State<Onboarding_Screen> {
               child: Text(
                   currentIndex == contents.length - 1 ? "Continue" : "Next"),
               onPressed: () {
-                Get.to(const home_Screen());
+                Get.to(const Sign_In());
                
               },
               color: Theme.of(context).primaryColor,
